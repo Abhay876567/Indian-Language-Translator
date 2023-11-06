@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Language Translation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <div class="img_name flex">
+            <a href="#" class="company-logo">
+                <img src="/IMG/icon.jpg" alt="Error">
+            </a>
+            <p> <b>Indian Language Translator</b>
+            </p>
+        </div>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-items"><a href="/index.html" ><b>Home</b></a></li>
+                    <li class="hover-link nav-items"><a href="/about.html" ><b>About</b></a></li>
+                    <li class="hover-link nav-items"><a href="/contact_us.html"><b>Contact Us</b></a></li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <p><b>Night/Dark mode</b></p>
+                <div class="theme ">
+                    <div class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
+                        <a href="#">
+                            <img src="/IMG/classes-dark-mode-icon.png" alt="dark-button">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="main-container flex">
+            <div class="container1" id="card-container">
+                <div class="textAreaClass1">
+                    <h2>Text in English</h2>
+                    <textarea id="TextAreaID" class="formText" rows="25" cols="30" placeholder="Write Down.."></textarea>
+                </div>
+            </div>
+            <div class="container2" id="card-container">
+                <div class="textAreaClass2">
+                    <h2>Translate into Hindi</h2>
+                    <button onclick="translateTextHindi()">Translate</button>
+                    <textarea id="TextAreaID2" class="toTranslateHindi" rows="25" cols="30"></textarea>
+                </div>
+            </div>
+            <div class="container3" id="card-container">
+                <div class="textAreaClass3_1 flex">
+                    <h2>Translate into </h2>
+                    <select name="language" id="language"></select>
+                </div>
+                <div class="textAreaClass3">
+                    <button onclick="translateText()">Translate</button>
+                    <textarea id="TextAreaID3" class="toTranslate" rows="25" cols="30"></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex">
+        <div class="footer">
+            <p>Copyright &copy; by Abhay Chaurasia.</p>
+        </div>
+        <div class="png flex">
+            <p>Follow us on:-</p>
+            <img src="IMG/icons8-linkedin-50.png" alt="">
+            <img src="IMG/icons8-instagram-50.png" alt="">
+            <img src="IMG/icons8-facebook-50.png" alt="">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
